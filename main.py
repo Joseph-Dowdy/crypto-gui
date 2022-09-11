@@ -1,24 +1,3 @@
-"""
-Joseph Dowdy
-MIS 315, Summer 1st Session 2022 - Section 1
-6/28/22
-Homework Assignment #5, Crypto rate conversion w/ an API
-I, Joseph Dowdy, can attest that this script is my work and my work alone, enjoy! :-)
-
-I have a lot of template 'rows'(lists) set up to make writing to the csv file much easier. Overall my process is to make
-the request to the api while only requesting the live data for the 4 crypto coins. Their respective values are stored
-into a list. The user is then prompted with a GUI. Any blank entry boxes are treated as 0.0. When clicked, the
-conversion button takes the entered values and attempts to cast them as floats, if unsuccessful an error message
-appears. If successful the script continues to do calculations and writes the desired output to a csv file title
-'crypto_conversions.csv'. This script only supports writing one set of conversions at a time, meaning if a user enters
-values and converts and then writes more values and converts, only the later values will be reflected in the csv
-file. Entry boxes are cleared after successful conversions as well as a message box appears telling the user that the
-conversion was successful.
-
-Note - I wrote this code on MacOS which is a little wonky when configuring button background colors. I found a method
-to change them (highlightbackground) but I am unsure if this will properly display my chosen color on PC. I apologize
-in advance for the trouble.
-"""
 
 # -------------------------------------------------- Imports ---------------------------------------------------------#
 import requests
@@ -33,7 +12,9 @@ SYMBOLS_COLUMN = ["BTC", "ETH", "BNB", "XRP"]
 HASH_ROW = ["--", "--", "--","--", "--"]
 sum_entered = 0
 
-MY_KEY = "9dea11b46f55bb9473f6ebd06874807e"
+# User key needed from coinlayer API
+MY_KEY = "KEY NEEDED"
+
 URL = f"http://api.coinlayer.com/api/live?access_key={MY_KEY}&symbols={SYMBOLS}"
 HEADER = ["Currency", "Price", "Quantity", "Cost(USD)", "Exchange Rate USD:COIN"]
 
