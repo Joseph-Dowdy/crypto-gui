@@ -1,0 +1,13 @@
+{
+    "success": true,
+    "terms": "https://coinlayer.com/terms",
+    "privacy": "https://coinlayer.com/privacy",
+    "timestamp": 1656036306,
+    "target": "USD",
+    "rates": {
+        "BNB": 230.547565,
+        "BTC": 21084.645408,
+        "ETH": 1151.383538,
+        "XRP": 0.361497
+    }
+}
